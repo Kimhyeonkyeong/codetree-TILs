@@ -26,6 +26,7 @@ void proc(int a, int b,int c, int *p)
         {
             printf("%d ",p[i-1]);
         }
+        printf("\n");
         
     }
 }
