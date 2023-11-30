@@ -26,8 +26,9 @@ int fun(int *x,int *y,int n, int m)
         {
             return 0;
         }
-        return 1;
+    
     }
+    return 1;
 }
 int main() {
     int n,m;
