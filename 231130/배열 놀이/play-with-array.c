@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int n;
-void proc(int a, int b,int c, int *p);
+void proc(int a, int b,int c, int *p)
 {
     int i;
     if(a==1)
