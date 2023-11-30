@@ -8,27 +8,22 @@ void input(int *p,int k)
         scanf("%d",&p[i]);
     }
 }
-int fun(int *x,int *y,int n, int m)
-{
-    int i,j,start;
-    for(i=0;i<n;i++)
-    {
-        if(x[i]==y[0])
-        {
+int fun(int *x, int *y, int n, int m) {
+    int i, j, start;
+    for (i=0;i<n;i++) {
+        if (x[i]==y[0]) {
             start=i;
             break;
         }
     }
-    //if(n-start<m-1) return 0;
-    for(i=start+1;i<n;i++)
-    {
-        if(x[i]!=y[i-start]) 
+
+    for (i=start+1,j=1;i<n&&j<m;i++,j++) {
+        if (x[i] != y[j]) 
         {
             return 0;
         }
-    
     }
-    return 1;
+    return (j==m);
 }
 int main() {
     int n,m;
