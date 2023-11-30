@@ -8,9 +8,8 @@ void input(int *p,int k)
         scanf("%d",&p[i]);
     }
 }
-int fun(int *x, int *y, int n, int m) 
-    {
-    int i, j, start;
+int fun(int *x, int *y, int n, int m){
+    int i,j,start;
     for(i=0;i<=n-m;i++) {
         if(x[i]==y[0]){
             start = i;
@@ -47,6 +46,5 @@ int main() {
     }
     free(p1);
     free(p2);
-
     return 0;
 }
