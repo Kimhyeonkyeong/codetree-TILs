@@ -3,7 +3,7 @@
 int main() {
     float a;
     scanf("%f",&a);
-    if(a>1.0)
+    if(a>=1.0)
     {
         printf("High");
     }
