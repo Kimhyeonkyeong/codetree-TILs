@@ -16,5 +16,9 @@ int main() {
             printf("%d",a);
         }
     }
+    else if(a==1)
+    {
+        printf("%d",1);
+    }
     return 0;
 }
